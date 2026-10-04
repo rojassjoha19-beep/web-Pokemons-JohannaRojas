@@ -1,19 +1,90 @@
-/* Estilos personalizados */
+/* ===== Base ===== */
 body {
-  background-color: #f8f9fa;
+  background-color: #924c4c;
+  min-height: 100vh;
 }
 
-h1 {
+/* ===== Encabezado ===== */
+.app-header {
+  background-color: #6e1f27;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 6px 20px rgba(220, 53, 69, 0.3);
+  margin-bottom: 30px;
+}
+.logo-header {
+  height: 80px;
+  max-width: 100%;
+}
+.app-header h1 {
   font-weight: bold;
-  color: #dc3545;
+  color: #fff;
+  margin: 0;
 }
 
+.subtitulo {
+  margin: 5px 0 0;
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* ===== Buscador ===== */
+.seccion-buscador {
+  background-color:  #bdb9a7;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Botones ===== */
+.btn {
+  border-radius: 50px;
+  padding: 8px 22px;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Buscar */
+.btn-primary {
+  background-color: #ac202e;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #96212c;
+}
+
+/* Volver */
+.btn-outline-secondary {
+  background-color: #863f29;
+  border: none;
+  color: #ffffff;
+}
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active,
+.btn-outline-secondary:focus {
+  background-color: #703232;
+  color: #ffffff;
+}
+
+/* ===== Cards ===== */
 .card {
-  transition: transform 0.2s;
+  background-color: #bdb9a7;
+  border: none;
+  border-radius: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .card img {
@@ -22,7 +93,11 @@ h1 {
   object-fit: contain;
 }
 
-/* Clase para centrar una sola card */
 .single-card {
   max-width: 300px;
+}
+
+/* ===== Pie ===== */
+.app-footer {
+  color: #868e96;
 }
